@@ -3,11 +3,12 @@ return {
   dependencies = { "MeanderingProgrammer/render-markdown.nvim" },
   keys = {
     {
-      "<leader>cd",
+      "<leader>cp",
       function()
         require("render-markdown").preview()
       end,
       desc = "Markdown Preview(render-markdown)",
+      ft = "markdown",
     },
   },
   ft = { "markdown" },
